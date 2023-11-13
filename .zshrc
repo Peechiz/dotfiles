@@ -108,31 +108,61 @@ source $ZSH/oh-my-zsh.sh
 
 alias nah='git checkout .'
 alias undo='git reset --hard HEAD^'
-alias dev='npm run dev'
 alias gs='git status'
 alias ga='git add'
 alias gap='git add -p'
 alias gc='git commit -vm'
+alias gx='git checkout'
 
-alias profile="code -a ~/.zshrc"
+# alias profile="code -a ~/.zshrc"
+
+# System
 mkcd() { mkdir -- "$1" && cd -- "$1";}
-alias reload="source ~/.zshrc"
-
-
+alias reload="exec zsh"
 alias grep='grep --color'
 alias cp='cp -v'
 alias mv='mv -iv'
-alias rm='rm -v'
 alias ll="pwd && ls -FGlAhp"
+export BAT_THEME='Dracula'
+alias cat='bat --paging=never'
 
+# NPM
+alias scripts='cat package.json | jq .scripts'
 alias vite='npm create vite@latest'
+alias dev='npm run dev'
+# alias evilchrome='Chrome\ Apps.localized --disable-web-security --user-data-dir=“~/testUser”'
 
+# Pico8
+alias picoman='code /Applications/pico-8/pico-8_manual.txt'
+alias picoshort='open /Applications/pico-8/PICO-8_CheatSheet_0111Gm_4k.png'
 
+alias tree='tree -C -I node_modules'
+# ${1:-2} is "Use first arg or default to 2"
+function twig() { tree -L ${1:-2};}
 
 # include Z, yo
 . ~/.oh-my-zsh/plugins/z/z.sh
 
-## init brew, rbenv, nodenv
-# eval $(/opt/homebrew/bin/brew shellenv)
-# eval "$(rbenv init - bash)"
-# eval "$(nodenv init -)"
+export PUMADEV_SOURCE_ENV=0
+eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(rbenv init - bash)"
+eval "$(nodenv init -)"
+
+# Add Devkick control
+export PATH=/Users/chrisimpicciche/Ink/devkick-control/cli:$PATH
+export AWS_PROFILE=ci-dev-echoexport
+PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+ eval "$(pyenv init --path)"
+fi
+
+# bun completions
+# [ -s "/Users/chrisimpicciche/.bun/_bun" ] && source "/Users/chrisimpicciche/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"q
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# fancy diffs
+# export PATH="/Users/chrisimpicciche/Applications/diff-so-fancy:$PATH"
