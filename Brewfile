@@ -2,7 +2,10 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 
+brew "mas"
+
 ## CLI
+# -----------------------------------------------------------------------------
 brew "bat"
 brew "cowsay"
 brew "glow"
@@ -12,10 +15,20 @@ brew "stow"
 brew "tree"
 brew "wget"
 
+## Languages
+# -----------------------------------------------------------------------------
+brew "node"
+
+## Language Deps
+# -----------------------------------------------------------------------------
+brew "nodenv"
+
 ## Fonts
+# -----------------------------------------------------------------------------
 cask "font-fira-code"
 
 ## VSCode extensions
+# -----------------------------------------------------------------------------
 vscode "bierner.markdown-mermaid"
 vscode "dracula-theme.theme-dracula"
 vscode "ericadamski.carbon-now-sh"
@@ -25,5 +38,7 @@ vscode "meganrogge.template-string-converter"
 vscode "mikestead.dotenv"
 
 ## GUI apps
+# -----------------------------------------------------------------------------
 mas "Slack", id:803453959
 mas "Magnet", id:441258766
+mas "Pixelmator Pro", id:1289583905
