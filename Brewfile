@@ -42,6 +42,7 @@ vscode "mikestead.dotenv"
 cask "warp"
 cask "visual-studio-code"
 cask "spotify"
+cask "vlc"
 mas "Slack", id:803453959
 mas "Magnet", id:441258766
 mas "Pixelmator Pro", id:1289583905
