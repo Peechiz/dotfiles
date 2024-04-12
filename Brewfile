@@ -39,6 +39,9 @@ vscode "mikestead.dotenv"
 
 ## GUI apps
 # -----------------------------------------------------------------------------
+cask "firefox"
+cask "google-chrome"
+cask "1password"
 cask "warp"
 cask "visual-studio-code"
 cask "spotify"
