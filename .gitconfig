@@ -33,3 +33,5 @@
 	whitespace = red reverse
 [init]
 	defaultBranch = main
+[delta]
+  line-numbers = true
