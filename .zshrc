@@ -114,7 +114,7 @@ alias gap='git add -p'
 alias gc='git commit -vm'
 alias gx='git checkout'
 
-# alias profile="code -a ~/.zshrc"
+alias profile="code -a ~/.zshrc"
 
 # System
 mkcd() { mkdir -- "$1" && cd -- "$1";}
@@ -143,15 +143,10 @@ function twig() { tree -L ${1:-2};}
 # include Z, yo
 . ~/.oh-my-zsh/plugins/z/z.sh
 
-export PUMADEV_SOURCE_ENV=0
-eval $(/opt/homebrew/bin/brew shellenv)
-eval "$(rbenv init - bash)"
+# eval $(/opt/homebrew/bin/brew shellenv)
+# eval "$(rbenv init - bash)"
 eval "$(nodenv init -)"
 
-# Add Devkick control
-export PATH=/Users/chrisimpicciche/Ink/devkick-control/cli:$PATH
-export AWS_PROFILE=ci-dev-echoexport
-PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
  eval "$(pyenv init --path)"
