@@ -11,6 +11,7 @@ brew "jq"
 brew "stow"
 brew "tree"
 brew "wget"
+brew "delta" # better git diff
 
 ## Fonts
 cask "font-fira-code"
