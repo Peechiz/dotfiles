@@ -141,7 +141,7 @@ alias tree='tree -C -I node_modules'
 function twig() { tree -L ${1:-2};}
 
 # include Z, yo
-. ~/.oh-my-zsh/plugins/z/z.sh
+. ~/.oh-my-zsh/plugins/z/z.plugin.zsh
 
 # eval $(/opt/homebrew/bin/brew shellenv)
 # eval "$(rbenv init - bash)"

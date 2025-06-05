@@ -1,7 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/services"
-
 brew "mas"
 
 ## CLI
@@ -42,12 +38,13 @@ vscode "mikestead.dotenv"
 ## GUI apps
 # -----------------------------------------------------------------------------
 cask "firefox"
-cask "google-chrome"
-cask "1password"
-cask "warp"
-cask "visual-studio-code"
+cask "ghostty"
+# cask "google-chrome"
+# cask "1password"
+# cask "warp"
+# cask "visual-studio-code"
 cask "spotify"
 cask "vlc"
-mas "Slack", id:803453959
-mas "Magnet", id:441258766
+# mas "Slack", id:803453959
+# mas "Magnet", id:441258766
 mas "Pixelmator Pro", id:1289583905
