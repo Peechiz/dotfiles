@@ -39,10 +39,11 @@ vscode "mikestead.dotenv"
 # -----------------------------------------------------------------------------
 cask "firefox"
 cask "ghostty"
-# cask "google-chrome"
+cask "google-chrome"
 cask "1password"
 cask "visual-studio-code"
 cask "vlc"
+cask "obsidian"
 # mas "Slack", id:803453959
 # mas "Magnet", id:441258766
 mas "Pixelmator Pro", id:1289583905
