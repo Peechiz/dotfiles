@@ -7,7 +7,7 @@ likely, you're starting here to mass install a bunch of stuff
 
 this is probably easier using `stow`
 
-```
+```bash
 # install homebrew first:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 brew install stow;
