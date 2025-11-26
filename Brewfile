@@ -40,10 +40,8 @@ vscode "mikestead.dotenv"
 cask "firefox"
 cask "ghostty"
 # cask "google-chrome"
-# cask "1password"
-# cask "warp"
-# cask "visual-studio-code"
-cask "spotify"
+cask "1password"
+cask "visual-studio-code"
 cask "vlc"
 # mas "Slack", id:803453959
 # mas "Magnet", id:441258766
